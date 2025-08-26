@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet/less" type="text/css" href="./css/style.less">
+    <link rel="stylesheet/less" type="text/css" href="./css/media.less">
+    <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script src="./script/index.js"></script>
+    <script type="module" src="./script/action.js"></script>
+    <title>Find clothes that matches your style</title>
+</head>
+<body>
+    <section class="signup__notification" id="signup__notification">
+        <section class="notification__content">
+            <span class="notification_text">
+                Sign up and get 20% off to your first order.
+                <a href="" class="notification_text link">Sign Up Now</a>
+            </span>
+            <button class="clearly" id="signup__close-notification">
+                <img src="./img/close-vector.svg" alt="">
+            </button>
+        </section>
+    </section>
+    <header id="shop__header">
+        <img class="logotype" src="./img/brand/SHOP.CO.svg" alt="">
+        <nav>
+            <ul class="navigation">
+                <li class="navigation" id="navigation__shop-catalog">
+                    <span class="navigation__shop">Shop <img src="./img/frame-vector.svg" class="navigation__shop" alt=""></span>
+                    <section class="list__catalog">
+                        <ul class="catalog">
+                            <li class="catalog">
+                                <span>Man</span>
+                            </li>
+                            <li class="catalog">
+                                <span>Woman</span>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+                <li class="navigation">
+                    <a href="">On sale</a>
+                </li>
+                <li class="navigation">
+                    <a href="#shop__new-arrivals" scroll-behavior: smooth>New arrivals</a>
+                </li>
+                <li class="navigation">
+                    <a href="">Brands</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="input__search">
+            <img src="./img/search-vector.svg" alt="">
+            <input type="search" name="search-product" id="header__search-product" placeholder="Search for products...">
+        </section>
+        <section class="profile__action">
+            <button class="clearly">
+                <img src="./img/cart-vector.svg" alt="">
+            </button>
+            <button class="clearly">
+                <img src="./img/profile-vector.svg" alt="">
+            </button>
+        </section>
+    </header>
+    <section class="hero" id="shop__hero">
+        <section class="hero__title">
+            <span class="hero_text">Find clothes that matches your style</span>
+            <span class="hero_subtext">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</span>
+            <button class="primary">Shop Now</button>
+        </section>
+        <section class="hero__statistic">
+            <section class="block">
+                <span class="block_head">200+</span>
+                <span class="block_text">International Brands</span>
+            </section>
+            <section class="block">
+                <span class="block_head">2,000+</span>
+                <span class="block_text">High-Quality Products</span>
+            </section>
+            <section class="block">
+                <span class="block_head">30,000+</span>
+                <span class="block_text">Happy Customers</span>
+            </section>
+        </section>
+    </section>
+    <section class="brands" id="shop__brands">
+        <img src="./img/brands/log-1-1-1.svg" alt="">
+        <img src="./img/brands/zara-logo-1 1.svg" alt="">
+        <img src="./img/brands/gucci-logo-1 1.svg" alt="">
+        <img src="./img/brands/prada-logo-1 1.svg" alt="">
+        <img src="./img/brands/lgg-111.svg" alt="">
+    </section>
+    <section class="clothes__sellings" id="shop__new-arrivals">
+        <span class="text_title">New arrivals</span>
+        <section class="clothes-block">
+            <section class="clothes">
+                <img src="./img/clothes/image 7.png" alt="" class="clothes__img">
+                <span class="clothes__name">T-shirt with Tape Details</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/half-star.svg" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">4.5</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <span class="clothes__price">$120</span>
+            </section>
+            <section class="clothes sale">
+                <img src="./img/clothes/image 8.png" alt="" class="clothes__img">
+                <span class="clothes__name">Skinny Fit Jeans</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/half-star.svg" alt="">
+                        <img src="" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">3.5</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <section class="clothes__sales">
+                    <span class="clothes__price">$240</span>
+                    <span class="clothes__oldprice">$260</span>
+                    <span class="clothes__sale" title="Sale 20%">-20%</span>
+                </section>
+            </section>
+            <section class="clothes">
+                <img src="./img/clothes/image 9.png" alt="" class="clothes__img">
+                <span class="clothes__name">Checkered Shirt</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/half-star.svg" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">4.5</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <span class="clothes__price">$180</span>
+            </section>
+            <section class="clothes sale">
+                <img src="./img/clothes/image 10.png" alt="" class="clothes__img">
+                <span class="clothes__name">Skinny Fit Jeans</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/half-star.svg" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">4.5</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <section class="clothes__sales">
+                    <span class="clothes__price">$130</span>
+                    <span class="clothes__oldprice">$160</span>
+                    <span class="clothes__sale" title="Sale 30%">-30%</span>
+                </section>
+            </section>
+        </section>
+        <button class="secondary">View All</button>
+    </section>
+    <section class="clothes__sellings" id="shop__top-selling">
+        <span class="text_title">Top selling</span>
+        <section class="clothes-block">
+            <section class="clothes sale">
+                <img src="./img/clothes/image 73.png" alt="" class="clothes__img">
+                <span class="clothes__name">Vertical Striped Shirt</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">5</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <section class="clothes__sales">
+                    <span class="clothes__price">$212</span>
+                    <span class="clothes__oldprice">$232</span>
+                    <span class="clothes__sale" title="Sale 20%">-20%</span>
+                </section>
+            </section>
+            <section class="clothes">
+                <img src="./img/clothes/image 83.png" alt="" class="clothes__img">
+                <span class="clothes__name">Courage Graphic T-shirt</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">4</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <span class="clothes__price">$145</span>
+            </section>
+            <section class="clothes">
+                <img src="./img/clothes/image 93.png" alt="" class="clothes__img">
+                <span class="clothes__name">Loose Fit Bermuda Shorts</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">3</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <span class="clothes__price">$80</span>
+            </section>
+            <section class="clothes">
+                <img src="./img/clothes/image 103.png" alt="" class="clothes__img">
+                <span class="clothes__name">Faded Skinny Jeans</span>
+                <section class="clothes__stars">
+                    <section class="star">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/full-star.svg" alt="">
+                        <img src="./img/half-star.svg" alt="">
+                    </section>
+                    <section class="counter">
+                        <span class="count">4.5</span>
+                        <span class="max-count">/5</span>
+                    </section>
+                </section>
+                <span class="clothes__price">$210</span>
+            </section>
+        </section>
+        <button class="secondary">View All</button>
+    </section>
+    <section class="browse" id="shop__browse-style">
+        <section class="browse__container">
+            <span class="text_title">Browse by dress style</span>
+            <section class="browse__block top">
+                <section class="block top-left" id="block_casual">
+                    <span class="block_text">Casual</span>
+                </section>
+                <section class="block top-right" id="block_formal">
+                    <span class="block_text">Formal</span>
+                </section>
+            </section>
+            <section class="browse__block bottom">
+                <section class="block bottom-left" id="block_party">
+                    <span class="block_text">Party</span>
+                </section>
+                <section class="block bottom-right" id="block_gym">
+                    <span class="block_text">Gym</span>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="reviews" id="shop__review">
+        <span class="text_title">Our happy customers</span>
+        <section class="button__box">
+            <button class="clearly" id="shop__review-left">
+                <img src="./img/arrow-down-bold 2.svg" alt="">
+            </button>
+            <button class="clearly" id="shop__review-right">
+                <img src="./img/arrow-down-bold 1.svg" alt="">
+            </button>
+        </section>
+        <section class="review__list" id="shop__review-list">
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Sarah M.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Alex K.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">James L.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Sarah M.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Alex K.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">James L.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Sarah M.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Alex K.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">James L.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Sarah M.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Alex K.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">James L.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Sarah M.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">Alex K.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</span>
+            </section>
+            <section class="review_block">
+                <section class="star">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                    <img src="./img/full-star.svg" alt="">
+                </section>
+                <section class="user">
+                    <span class="user_name">James L.</span>
+                    <img src="./img/verify.svg" alt="" class="user_verify">
+                </section>
+                <span class="review_text">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</span>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <section class="subscribe">
+            <span class="text_title">Stay upto date about our latest offers</span>
+            <section class="get_email">
+                <section class="input__email">
+                    <img src="./img/mail.svg" alt="">
+                    <input type="mail" id="shop__input-email" placeholder="Enter your email address">
+                </section>
+                <button class="third" id="shop__subscribe-email">Subscribe to Newsletter</button>
+            </section>
+        </section>
+        <section class="information">
+            <section class="info__brand">
+                <img src="./img/brand/SHOP.CO.svg" alt="" class="logotype">
+                <span class="title">We have clothes that suits your style and which you’re proud to wear. From women to men.</span>
+                <section class="social">
+                    <img src="./img/social/1.svg" alt="">
+                    <img src="./img/social/2.svg" alt="">
+                    <img src="./img/social/3.svg" alt="">
+                    <img src="./img/social/4.svg" alt="">
+                </section>
+            </section>
+            <section class="info company">
+                <span class="title">Company</span>
+                <ul>
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Works</li>
+                    <li>Career</li>
+                </ul>
+            </section>
+            <section class="info help">
+                <span class="title">Help</span>
+                <ul>
+                    <li>Customer Support</li>
+                    <li>Delivery Details</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </section>
+            <section class="info faq">
+                <span class="title">FAQ</span>
+                <ul>
+                    <li>Account</li>
+                    <li>Manage Deliveries</li>
+                    <li>Orders</li>
+                    <li>Payments</li>
+                </ul>
+            </section>
+            <section class="info resources">
+                <span class="title">Resources</span>
+                <ul>
+                    <li>Free eBooks</li>
+                    <li>Development Tutorial</li>
+                    <li>How to - Blog</li>
+                    <li>Youtube Playlist</li>
+                </ul>
+            </section>
+        </section>
+        <section class="under">
+            <span class="credit">Shop.co © 2000-2025. All Rights Reserved</span>
+            <section class="badges">
+                <img src="./img/badge/Badge.svg" alt="">
+                <img src="./img/badge/Badge-1.svg" alt="">
+                <img src="./img/badge/Badge-2.svg" alt="">
+                <img src="./img/badge/Badge-3.svg" alt="">
+                <img src="./img/badge/Badge-4.svg" alt="">
+            </section>
+        </section>
+        
+    </footer>
+</body>
+</html>

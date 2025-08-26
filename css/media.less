@@ -1,0 +1,36 @@
+.signup__notification {
+    transition: opacity 1.25s ease, transform 1.25s;
+    
+    &.closed {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+}
+
+.list__catalog {
+    display: none;
+
+    ul {
+        list-style: none;
+    }
+    
+}
+
+img.navigation__shop {
+    transition: transform .35s ease;
+}
+
+#navigation__shop-catalog:hover img.navigation__shop {
+    transform: rotate(90deg);
+}
+
+#navigation__shop-catalog:hover .list__catalog,
+.list__catalog:hover  {
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 5px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    padding: 24px 12px;
+    border-radius: 14px;
+}
